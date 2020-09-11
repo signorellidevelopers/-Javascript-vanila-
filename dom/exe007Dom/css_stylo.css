@@ -1,0 +1,11 @@
+body {
+  font-family: cursive;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+p {
+  width: 200px;
+  height: 350px;
+  margin: 10px auto auto 40px;
+  color: white;
+}
