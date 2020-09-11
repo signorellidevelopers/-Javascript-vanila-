@@ -1,4 +1,5 @@
 {
     "editor.renderWhitespace": "none",
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "files.autoSave": "onFocusChange"
 }
