@@ -1,14 +1,16 @@
 (function(){
     'user strict';
-    let $txtUser = document.getElementById('txtUser');
-    let $txtPass = document.getElementById('txtPass');
-    let $btn = document.getElementById('btn');
+    let maximo = 100;
+    let $txtMsg = document.getElementById('msg')
+    let $resta = document.getElementById('resta')
 
-    $btn.addEventListener('click' , function(){
-        alert('clicou no botão')
-    })
+    $txtMsg.addEventListener('input', checkLength);
+    $resta.textContent = maximo;
 
-    if(!txtUser.value  || !$txtPass.value){
-        alert('preencha todos os campos');
+    
+    function checkLength (e){
+        let nCaracter = this.value.length;
+        $resta.textContent = maximo - nCaracter;
     }
+
 })()
