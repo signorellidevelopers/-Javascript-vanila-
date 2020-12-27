@@ -1,8 +1,8 @@
 (function(){
     'user strict';
-    let maximo = 100;
     let $txtMsg = document.getElementById('msg')
     let $resta = document.getElementById('resta')
+    let maximo = $txtMsg.maxLength;
 
     $txtMsg.addEventListener('input', checkLength);
     $resta.textContent = maximo;
